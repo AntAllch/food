@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// CHANGE ALL SCROLL BEHAVIOUR TO SMOOTH ON THE HTML
+html{
+    scroll-behavior: smooth;
+}
+
+// REMOVE LIST STYLES ON ALL UL & OL ELEMENTS WITH A LIST ROLE
+ul[role="list"],
+ol[role="list"]{
+    list-style: none;
+}
+
+
+// ENABLE AND CHANGE THE FOCUS COLORS DEPENDING ON YOUR DESIGN
+
+// :focus-visible{
+//     outline: 3px solid rgb(132, 130, 255);
+//     outline-offset: 3px;
+// }
+
+
+// ENABLE THIS OUTLINE FOR DEBUGGING PURPOSES, E.G. HORIZONTAL SCROLLING
+
+// *{
+//     outline: 2px solid red;
+// }
