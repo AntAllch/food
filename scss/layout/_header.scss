@@ -1,3 +1,75 @@
+@use "/scss/abstracts/responsive" as r;
+
 header{
     background-color: red;
+    width: 90%;
+    margin-left: auto;
+    padding: 20px 10px;
+    
+    @include r.respond(desktop){
+        background-color: orange;
+        padding: 20px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: initial;
+    }
+
+    .logo{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .nav-group{
+
+        background-color: teal;
+
+        @include r.respond(desktop){
+            display: flex;
+            flex-direction: column;
+            flex-flow: column-reverse;
+        }
+
+        .header-socials{
+            
+            background-color: yellowgreen;
+
+            .header-social-list{
+                display: flex;
+            }
+        }
+
+        nav{
+
+            .nav-item{
+    
+                margin-bottom: 1rem;
+    
+                @include r.respond(desktop){
+    
+                    margin-bottom: initial;
+    
+                    &:not(:first-child){
+                        margin-left: 1rem;
+                    }
+                }
+            }
+    
+            @include r.respond(desktop){
+                background-color: plum;
+                .nav-list{
+                    display: flex;
+                }
+            }
+    
+            //a
+            .nav-link{
+                text-transform: uppercase;
+                text-decoration: none;
+                
+            }
+        }
+
+
+    }
 }
